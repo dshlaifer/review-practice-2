@@ -32,5 +32,27 @@ public class part1
         return (Price > 10) ? "expensive" : "Cheap";
     
     }
+    public String help()
+    {
+        System.out.println("You must do this to fix your issue");
+        return help();
+    }
+    public String quit()
+    {
+        System.out.println("You will exit the tab");
+        return quit();
+    } 
+    
+    public void processCommand(String command)
+    {
+        if (command.equals("help")) {
+            help();
+            
+        }else if  (command.equals("quit")) {
+            quit();
+        } else {
+            System.out.println("sorry, I dont understand your command");
+        }
+    }
 
 }
