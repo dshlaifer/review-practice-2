@@ -26,4 +26,11 @@ public class part1
     }
     return price;
     }
+    
+    public String checkPrice(int Price)
+    {
+        return (Price > 10) ? "expensive" : "Cheap";
+    
+    }
+
 }
