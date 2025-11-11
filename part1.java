@@ -89,4 +89,12 @@ public class part1
    }
 
 } 
+   public void declarArray() {
+       int [] numbers = new int[100];
+       int [] doubled = new int[100];
+       
+       for (int i = 0; i < numbers.length; i++) {
+           doubled[i] = numbers[i] * 2;
+       }
+   }
 }
