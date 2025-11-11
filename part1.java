@@ -45,14 +45,18 @@ public class part1
     
     public void processCommand(String command)
     {
-        if (command.equals("help")) {
-            help();
-            
-        }else if  (command.equals("quit")) {
-            quit();
-        } else {
-            System.out.println("sorry, I dont understand your command");
+        switch (command) {
+            case "help":
+                help();
+                break;
+            case "quit":
+                quit();
+                break;
+            default:
+                System.out.println("I dont understand your command");
+                break;
         }
+
     }
 
 }
