@@ -72,5 +72,13 @@ public class part1
         return evens;
 
 } 
+   public boolean containsNumber(ArrayList<Integer> numbers, int target) {
+       for (int n : numbers) {
+           if (n == target) {
+               return true;
+           }
+       }
+       return false;
+   }
 
 }
