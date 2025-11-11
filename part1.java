@@ -80,5 +80,13 @@ public class part1
        }
        return false;
    }
+   public void removeBelow(ArrayList<Integer> numbers, int limit) {
+       for(int i = 0; i < numbers.size(); i++) {
+           if (numbers.get(i) < limit) {
+               numbers.remove(i);
+               i--;
+           }
+   }
 
+} 
 }
