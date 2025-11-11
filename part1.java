@@ -59,9 +59,11 @@ public class part1
 
     }
     
-    public void printNumbers() {
+    public void sumNumbers() {
+        int sum = 0;
         for (int i = 1; i <= 10; i++) {
-            System.out.println(i);
+            sum = sum + i;
         }
+        System.out.println("the sum is" + sum);
 } 
 }
