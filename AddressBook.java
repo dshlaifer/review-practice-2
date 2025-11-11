@@ -21,5 +21,13 @@ public class AddressBook
         addressBook.put ("author 3", "book3");
 
     }
+    public String findMary() {
+        if (addressBook.containsKey("Mary")) {
+        return addressBook.get("Mary");
+ 
+    } else {
+        return "contact not found";
+    }
 
 }
+ }
