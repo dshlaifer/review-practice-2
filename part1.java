@@ -60,13 +60,8 @@ public class part1
     }
     
     public void printNumbers() {
-        
-        int i = 1;
-        while (1 <= 10) {
-        System.out.println(i);
-        i++;
-        
-    }
-
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+        }
 } 
 }
