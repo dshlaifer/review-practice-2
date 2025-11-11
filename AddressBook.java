@@ -1,5 +1,5 @@
 import java.util.HashMap;
-
+import java.util.Scanner;
 /**
  * Write a description of class AddressBook here.
  *
@@ -30,4 +30,16 @@ public class AddressBook
     }
 
 }
+ public void addContact() {
+     Scanner input = new Scanner(System.in);
+     
+     System.out.println("Enter name:");
+     String name = input.nextLine();
+     
+     System.out.println("Enter Address:");
+     String address = input.nextLine();
+     
+     addressBook.put(name, address);
+     System.out.println("Contract added successfully");
+ }
  }
