@@ -1,4 +1,5 @@
-
+import java.util.ArrayList;
+import java.util.List;
 /**
  * Write a description of class part1 here.
  *
@@ -59,14 +60,17 @@ public class part1
 
     }
     
-    public void evenNumbers(int a, int b) {
+    public List<Integer> getevenNumbers(int a, int b) {
+        List<Integer> evens = new ArrayList<>();
 
         for (int i = a; i <= b; i ++) {
             if (i % 2 == 0) {
-                System.out.println(i);
+                evens.add(i);
             }
 
         }
+        return evens;
 
 } 
+
 }
